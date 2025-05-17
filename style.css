@@ -297,3 +297,24 @@
   .button-link:hover::after {
     transform: scaleX(1);
   }
+  /* Testimonials */
+  .testimonials {
+    background-color: var(--muted);
+    padding: 4rem 0;
+    border-radius: var(--radius);
+  }
+
+  .testimonial-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--card);
+    border-radius: var(--radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+
+  .testimonial-author {
+    font-style: italic;
+    color: var(--muted-foreground);
+  }
