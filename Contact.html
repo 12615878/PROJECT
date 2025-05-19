@@ -437,3 +437,55 @@
   a:hover {
     color: var(--primary-foreground);
   }
+   /* Navigation */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    position: relative;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+
+  .nav-links li {
+    margin-left: 2rem;
+  }
+
+  .nav-links a {
+    padding: 0.5rem;
+    border-radius: var(--radius);
+    font-weight: 500;
+  }
+
+  .nav-links a:hover {
+    background-color: var(--muted);
+  }
+
+  .nav-links a.active {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+  }
+
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .nav-toggle span {
+    height: 2px;
+    width: 25px;
+    background-color: var(--foreground);
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
